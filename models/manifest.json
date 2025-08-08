@@ -1,0 +1,36 @@
+{
+  "feature_columns": [
+    "contest",
+    "contest",
+    "year",
+    "month",
+    "day",
+    "weekday",
+    "day_of_year",
+    "iso_week",
+    "quarter",
+    "day_digit_sum",
+    "month_digit_sum",
+    "year_mod_100",
+    "ymd_digit_sum",
+    "contest_digit_sum",
+    "contest_is_prime",
+    "contest_mod_10",
+    "contest_mod_12",
+    "contest_mod_60",
+    "dm_mod_60",
+    "y_mod_60",
+    "mix1_mod_60",
+    "mix2_mod_60",
+    "mix3_mod_60"
+  ],
+  "ml_config": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "random_state": 42
+  },
+  "data_hash": "c6058bbac31e81b7a5d8c4174a9b2c921465da8cd67989eb8cb5ecefd5921546",
+  "sklearn_version": "1.7.1",
+  "python_version": "3.11.9",
+  "trained_at": "2025-08-08T12:45:21.040473Z"
+}

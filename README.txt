@@ -1,19 +1,22 @@
-# from repo root
-python -m pip install -r requirements.txt
+# 1) install deps
+pip install -r requirements.txt
 
-# put your CSV (A–H) at data/mega_sena.csv
-
-# create/refresh SQLite DB
+# 2) seed DB from your A–H CSV
 python main.py seed
 
-#local quick check
-# CLI – try each mode
+# 3) (optional) train & cache once, with holdout metric
+python main.py train --holdout
+
+# 4) CLI usage (uses cached model)
 python main.py suggest --date 2024-10-02 --contest 2354 --k 20 --mode hybrid
 python main.py suggest --date 2024-10-02 --contest 2354 --k 20 --mode rule
 python main.py suggest --date 2024-10-02 --contest 2354 --k 20 --mode ml
 
-# API server 
+# 5) API
 uvicorn mega_sena.api:app --host 0.0.0.0 --port 8000 --reload
+# visit http://127.0.0.1:8000/docs and try /suggest
+
+
 
 
 # example request 
