@@ -52,6 +52,9 @@ env/
 # CSV data
 *.csv
 
+# Trained model files
+models/model.joblib
+
 # OS files
 .DS_Store
 Thumbs.db
